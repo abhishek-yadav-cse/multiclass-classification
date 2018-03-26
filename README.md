@@ -1,13 +1,11 @@
 <h1>Medical Text Classification</h1>
 <br><br>
 <b>Description:</b><br>
-The objectives of this task are the following:
+The objectives of this task are the following:<br>
  Choose appropriate techniques for modeling text. <br>
  Experiment with various classification models.<br>
  Think about dealing with imbalanced data.<br>
  F1 Scoring Metric<br>
-
-
 <br>
 <b>Detailed Description:</b><br>
 Develop predictive models that can determine, given a medical abstract, which of 5 classes it falls in.
@@ -19,13 +17,13 @@ Since the dataset is imbalanced, the scoring function will be the F1-score inste
 <b>Caveats:</b><br>
 + The dataset has an imbalanced distribution i.e., there are different numbers of samples in each class. No information is provided for the test set regarding the distribution.<br>
 + Use the data mining knowledge you have gained until now, wisely, to optimize your results.<br>
-<br><br>
+<br>
 <b>Data Description:</b><br>
 The training dataset consists of 14442 records and the test dataset consists of 14438 records. We provide you with the training class labels and the test labels are held out. The data are provided as text in train.dat and test.dat, which should be processed appropriately.
 <br>
 train.dat: Training set (class label, followed by a tab separating character and the text of the medical abstract).<br>
 test.dat: Testing set (text of medical abstracts in lines, no class label provided). format.dat: A sample submission with 14438 entries randomly chosen to be 1 to 5.<br>
-<br><br>
+<br>
 <b>Files Needed: </b><br>
  Training Data: train.dat <br>
  Test Data: test.dat<br>
@@ -57,7 +55,6 @@ The classification result was then written on the output “prediction.dat” fi
 <br><br>
 <b>Initial Attempt:</b><br>
 Used CountVectorizer(without any parameters)and TF-IDF transformer with MultinomialNB classifier and got F1 score of 0.7887
-					
 <br><br>
 <b>Final Attempt:</b><br>	
 In my final attempt, I used the TF-IDF vectorizer and tweaked various parameters in the form of ngram range. The classifier used was LinearSVC to get the best result.<br>
