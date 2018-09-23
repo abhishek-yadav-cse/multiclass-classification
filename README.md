@@ -1,5 +1,6 @@
 <h1>Medical Text Classification</h1>
 <br><br>
+<i> Part of CMPE255 Class Assignment </i>
 <b>Description:</b><br>
 The objectives of this task are the following:<br>
  Choose appropriate techniques for modeling text. <br>
